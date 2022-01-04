@@ -1,5 +1,7 @@
 # Currency-calculator-react 
 
+![Animation]()
+
 # Technologies
 
 1. HTML
