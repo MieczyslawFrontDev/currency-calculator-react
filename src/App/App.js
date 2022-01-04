@@ -19,7 +19,11 @@ const calculateResult = (amount, currency) => {
 
   return (
     <main className="container">
-      <Form result={result} calculateResult={calculateResult} setResult={setResult} />
+      <Form 
+        result={result} 
+        calculateResult={calculateResult} 
+        setResult={setResult}
+       />
     </main>
   );
 }
