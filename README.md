@@ -13,6 +13,10 @@
 7. Babel
 8. ES6+
 
+# Demo
+
+https://mieczyslawfrontdev.github.io/currency-calculator-react/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
