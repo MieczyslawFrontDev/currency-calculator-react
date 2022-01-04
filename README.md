@@ -1,6 +1,6 @@
 # Currency-calculator-react 
 
-![Animation]()
+![Animation](https://github.com/MieczyslawFrontDev/currency-calculator-react/blob/main/currency-calculator-react%20animation.gif?raw=true)
 
 # Technologies
 
