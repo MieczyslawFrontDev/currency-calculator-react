@@ -1,3 +1,16 @@
+# Currency-calculator-react 
+
+# Technologies
+
+1. HTML
+2. CSS (Flex)
+3. BEM
+4. JS
+5. React
+6. Webpack
+7. Babel
+8. ES6+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
