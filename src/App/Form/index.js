@@ -2,6 +2,7 @@ import "./style.css";
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
+import { Clock } from "./Clock";
 
 export const Form = ({ calculateResult, result, setResult }) => {
   const [amount, setAmount] = useState("");
@@ -21,6 +22,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
 
   return (
     <form className="formElement" onSubmit={onFormSubmit} onReset={onFormReset}>
+      <Clock />
       <legend className="formElement__legend">Kalkulator walut</legend>
       <p className="formElement__paragraph">
         Wymagane pola oznaczone są gwiazdką*
