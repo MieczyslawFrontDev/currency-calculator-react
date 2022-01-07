@@ -21,20 +21,20 @@ export const Form = ({ calculateResult, result, setResult }) => {
 
 
   return (
-    <form className="formElement" onSubmit={onFormSubmit} onReset={onFormReset}>
+    <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
       <Clock />
-      <legend className="formElement__legend">Kalkulator walut</legend>
-      <p className="formElement__paragraph">
+      <legend className="form__legend">Kalkulator walut</legend>
+      <p className="form__paragraph">
         Wymagane pola oznaczone są gwiazdką*
       </p>
       <p>
-        <label className="formElement__label">
-          <strong className="formElement__labelText">Kwota (zł):*</strong>
+        <label className="form__label">
+          <strong className="form__labelText">Kwota (zł):*</strong>
           <input
             type="number"
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
-            className="formElement__field"
+            className="form__field"
             name="amount"
             min="1"
             step="any"
@@ -44,11 +44,11 @@ export const Form = ({ calculateResult, result, setResult }) => {
         </label>
       </p>
       <p>
-        <label className="formElement__label">
-          <strong className="formElement__labelText">Waluta:*</strong>
+        <label className="form__label">
+          <strong className="form__labelText">Waluta:*</strong>
           <select
             name="currency"
-            className="formElement__field"
+            className="form__field"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -63,13 +63,13 @@ export const Form = ({ calculateResult, result, setResult }) => {
           </select>
         </label>
       </p>
-      <div className="flexBox">
-        <button type="submit" className="formElement__button">
+      <div className="form__buttons">
+        <button type="submit" className="form__button">
           Przelicz
         </button>
         <button
           type="reset"
-          className="formElement__button formElement__button--reset"
+          className="form__button form__button--reset"
         >
           Wyczyść
         </button>
