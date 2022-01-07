@@ -1,5 +1,5 @@
 
-.formElement__legend {
+.form__legend {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 26px;
@@ -7,19 +7,19 @@
   text-align: center;
 }
 
-.formElement__paragraph {
+.form__paragraph {
   color: teal;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.formElement__labelText {
+.form__labelText {
   display: inline-block;
   width: 150px;
   font-size: 24px;
 }
 
-.formElement__field {
+.form__field {
   max-width: 350px;
   width: 100%;
   padding: 5px;
@@ -27,11 +27,11 @@
   text-align: center;
 }
 
-.flexBox {
+.form__buttons {
   display: flex;
 }
 
-.formElement__button {
+.form__button {
   width: 150px;
   padding: 5px;
   background-color: teal;
@@ -41,7 +41,7 @@
 
 }
 
-.formElement__button:hover {
+.form__button:hover {
   background-color: hsl(180, 100%, 30%);
 }
 
