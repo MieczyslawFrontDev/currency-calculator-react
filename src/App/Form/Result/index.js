@@ -1,4 +1,4 @@
-import { Paragraph, StyledResult } from "./styled";
+import { StyledResult } from "./styled";
 
 export const Result = ({ result }) => (
   <>
