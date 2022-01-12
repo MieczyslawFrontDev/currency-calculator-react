@@ -1,7 +1,8 @@
-import "./App.css";
+// import "./App.css";
 import { useState } from "react";
 import { Form } from "./Form";
 import { currencies } from "./currencies";
+import { Wrapper } from "./styled";
 
 function App() {
   const [result, setResult] = useState();
@@ -17,13 +18,13 @@ function App() {
   };
 
   return (
-    <main className="container">
+    <Wrapper>
       <Form
         result={result}
         calculateResult={calculateResult}
         setResult={setResult}
       />
-    </main>
+    </Wrapper>
   );
 }
 

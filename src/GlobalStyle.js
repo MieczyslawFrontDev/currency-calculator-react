@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+import background from "./background.jpg";
+
+export const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
   font-size: 20px;
@@ -10,7 +14,7 @@ html {
 }
 
 #root {
-  background-image: url("../../public/finance-ga33d0913e_1920.jpg");
+  background-image: url("${background}");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -18,11 +22,4 @@ html {
   align-items: center;
   min-height: 100vh;
 }
-.container {
-  flex-basis: 600px;
-  padding: 20px;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  box-shadow: 0px 0px 61px 9px white;
-}
+`;

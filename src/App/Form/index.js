@@ -1,8 +1,8 @@
-import "./style.css";
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
 import { Clock } from "./Clock";
+import { Legend, Paragraph, Label, Strong, Input, Wrapper, Button } from "./styled";
 
 export const Form = ({ calculateResult, result, setResult }) => {
   const [amount, setAmount] = useState("");
@@ -19,61 +19,42 @@ export const Form = ({ calculateResult, result, setResult }) => {
     setResult("");
   };
 
-
   return (
-    <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
+    <form onSubmit={onFormSubmit} onReset={onFormReset}>
       <Clock />
-      <legend className="form__legend">Kalkulator walut</legend>
-      <p className="form__paragraph">
-        Wymagane pola oznaczone są gwiazdką*
-      </p>
-      <p>
-        <label className="form__label">
-          <strong className="form__labelText">Kwota (zł):*</strong>
-          <input
+      <Legend>Kalkulator walut</Legend>
+      <Paragraph>Wymagane pola oznaczone są gwiazdką*</Paragraph>
+        <Label>
+          <Strong>Kwota (zł):*</Strong>
+          <Input
             type="number"
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
-            className="form__field"
             name="amount"
             min="1"
             step="any"
             placeholder="Wpisz kwotę..."
             required
           />
-        </label>
-      </p>
-      <p>
-        <label className="form__label">
-          <strong className="form__labelText">Waluta:*</strong>
-          <select
+        </Label>
+        <Label>
+          <Strong>Waluta:*</Strong>
+          <Input as="select"
             name="currency"
-            className="form__field"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
-            {currencies.map(currency => (
-              <option 
-                key={currency.short} 
-                value={currency.short}
-              >
+            {currencies.map((currency) => (
+              <option key={currency.short} value={currency.short}>
                 {currency.name}
-            </option>
+              </option>
             ))}
-          </select>
-        </label>
-      </p>
-      <div className="form__buttons">
-        <button type="submit" className="form__button">
-          Przelicz
-        </button>
-        <button
-          type="reset"
-          className="form__button form__button--reset"
-        >
-          Wyczyść
-        </button>
-      </div>
+          </Input>
+        </Label>
+      <Wrapper>
+        <Button type="submit">Przelicz</Button>
+        <Button type="reset">Wyczyść</Button>
+      </Wrapper>
       <Result result={result} />
     </form>
   );
