@@ -8,7 +8,7 @@
 2. CSS (Flex)
 3. BEM
 4. JS
-5. React
+5. React (Custom hooks, Styled-Components, Async/Await Axios)
 6. Webpack
 7. Babel
 8. ES6+
