@@ -61,3 +61,19 @@ export const Button = styled.button`
     filter: brightness(120%);
   }
 `;
+
+export const ErrorText = styled.div`
+margin-top: 20px;
+font-size: 16px;
+text-align: center;
+`
+export const LoadingText = styled.div`
+margin-top: 20px;
+font-size: 16px;
+text-align: center;
+`
+export const InfoText = styled.div`
+margin-top: 20px;
+font-size: 16px;
+text-align: center;
+`
