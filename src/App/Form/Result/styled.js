@@ -8,6 +8,5 @@ export const Paragraph = styled.p`
 export const StyledResult = styled.p`
   text-align: center;
   font-size: 30px;
-  font-weight: bold;
   margin: 0 auto;
 `;
