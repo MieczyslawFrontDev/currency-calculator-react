@@ -16,9 +16,9 @@ import {
 import { useRatesFromApi } from "../useRatesFromApi";
 
 export const Form = () => {
-  const [amount, setAmount] = useState();
+  const [amount, setAmount] = useState("");
   const [result, setResult] = useState();
-  const [currency, setCurrency] = useState("EUR")
+  const [currency, setCurrency] = useState("EUR");
   const ratesData = useRatesFromApi();
 
   const calculateResult = () => {
