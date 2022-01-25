@@ -36,9 +36,10 @@ export const Form = () => {
     calculateResult(amount, currency);
   };
 
-  const onFormReset = () => {
+  const onFormReset = (event) => {
+    event.preventDefault();
     setAmount("");
-    setCurrency();
+    setCurrency("EUR");
     setResult("");
   };
 
