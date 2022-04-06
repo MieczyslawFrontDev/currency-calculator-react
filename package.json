@@ -2,7 +2,7 @@
   "name": "currency-calculator-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mieczyslawfrontdev.github.io/currency-calculator-react/"
+  "homepage": "https://mieczyslawfrontdev.github.io/currency-calculator-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
