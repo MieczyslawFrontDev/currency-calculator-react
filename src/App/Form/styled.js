@@ -9,6 +9,7 @@ export const Legend = styled.legend`
 `;
 
 export const Paragraph = styled.p`
+  font-style: italic;
   color: teal;
   margin-bottom: 30px;
   text-align: center;
@@ -59,6 +60,11 @@ export const Button = styled.button`
 
   &:hover {
     filter: brightness(120%);
+  }
+
+  @media (max-width: 480px){
+    max-width: 100px;
+    width: 100%;
   }
 `;
 
