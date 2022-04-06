@@ -1,6 +1,6 @@
 # Currency-calculator-react 
 
-![Animation](https://github.com/MieczyslawFrontDev/currency-calculator-react/blob/main/currency-calculator-react%20animation.gif?raw=true)
+![Animation](https://github.com/MieczyslawFrontDev/currency-calculator-react/blob/main/animationCalkulator.gif?raw=true)
 
 # Technologies
 
@@ -8,7 +8,7 @@
 2. CSS (Flex)
 3. BEM
 4. JS
-5. React (Custom hooks, Styled-Components, Async/Await Axios)
+5. React (Custom hooks, Styled-Components, Axios)
 6. Webpack
 7. Babel
 8. ES6+
