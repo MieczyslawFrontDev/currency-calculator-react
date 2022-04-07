@@ -41,7 +41,6 @@ export const Input = styled.input`
   padding: 5px;
   border-radius: 10px;
   text-align: center;
-  margin: 0 auto;
 `;
 
 export const Wrapper = styled.div`
