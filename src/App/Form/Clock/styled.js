@@ -7,8 +7,8 @@ export const StyledClock = styled.p`
   font-family: "Roboto Mono", monospace;
   font-size: 12px;
 
-  @media(max-width: 480px){
-    font-size: 10px;
-    text-align: center;
-  }
+@media(max-width: 480px){
+  font-size: 10px;
+  text-align: center;
+}
 `;

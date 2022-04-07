@@ -63,7 +63,7 @@ export const Button = styled.button`
   }
 
   @media (max-width: 480px){
-    max-width: 100px;
+    max-width: 150px;
     width: 100%;
   }
 `;
