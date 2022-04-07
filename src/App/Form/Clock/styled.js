@@ -9,5 +9,6 @@ export const StyledClock = styled.p`
 
   @media(max-width: 480px){
     font-size: 10px;
+    text-align: center;
   }
 `;
